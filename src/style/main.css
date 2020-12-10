@@ -12,6 +12,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html, body {
+    height: 100vh;
+}
+
 /* Cabeçalho da página */
 nav {
     background-color: var(--cor-menta);
