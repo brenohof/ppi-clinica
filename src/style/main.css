@@ -12,26 +12,37 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Cabeçalho da página */
 nav {
     background-color: var(--cor-menta);
 }
 
-nav a {
+.logo {
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.link {
     font-size: 1.2rem;
-    margin: 5px 10px;
+    padding: 5px 10px;
 
     text-decoration: none;
     color: white;
+    
 }
 
-nav a:hover {
+.link:hover {
     color: #eee;
+    border-bottom: 1px solid #eee;
 }
 
+/* Conteúdo principal */
 
+/* Rodapé da página */
 footer {
-    background-color: var(--cor-menta);
-    height: 96px;
-
-    box-shadow: -4px 15px .5rem 1rem rgba(0,0,0,.15)
+    border-top: 2px solid var(--cor-menta);
+    height: 72px;
 }
