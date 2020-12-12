@@ -27,7 +27,4 @@ if (!$stmt->execute([
     $cep, $logradouro, $bairro, $cidade, $estado
 ])) throw new Exception('Falha na inserção');
 
-header("location: ../index.html");
-exit();
-
 ?>

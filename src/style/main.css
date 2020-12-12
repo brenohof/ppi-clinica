@@ -16,6 +16,10 @@ html, body {
     height: 100vh;
 }
 
+body {
+    background-color: #eee;
+}
+
 /* Cabeçalho da página */
 nav {
     background-color: var(--cor-menta);
