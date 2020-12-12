@@ -12,6 +12,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    height: 100vh;
+
+    background-image: url('../assets/login-bg.jpg');
+    background-size: cover;
+}
+
 .wrapper {
     width: 476px;
     margin: 0 auto;
@@ -21,6 +28,7 @@
     flex-direction: column;
     justify-content: center;
 
+    background-color: white;
     border: solid 2px #eee;
     border-radius: 12px;
 
