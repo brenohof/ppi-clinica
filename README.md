@@ -5,7 +5,7 @@ Must contain
 ## Public
 - [ ] Homepage
 - [ ] Gallery
-- [ ] Address Form
+- [x] Address Form
 - [ ] Login page
 - [ ] Scheduling
 
