@@ -3,8 +3,8 @@
 Must contain
 
 ## Public
-- [ ] Homepage
-- [ ] Gallery
+- [x] Homepage
+- [x] Gallery
 - [x] Address Form
 - [ ] Login page
 - [ ] Scheduling
