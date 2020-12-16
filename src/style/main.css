@@ -45,6 +45,13 @@ nav {
     color: #eee;
 }
 
+/* Rodapé da página */
+footer {
+    height: 150px;
+    background-color: var(--cor-menta);
+}
+
+
 /* Home */
 .divImagem {
     height: 550px;
@@ -94,21 +101,41 @@ nav {
 /* Galeria de imagens */
 
 .pics {
-    padding: 0px;
-    margin:0;
+    padding: 20px;
 }
 
-.pics img{
-    width: 300px;
-    height: 150px;
+.pics img {
+    width: 100%;
+    height: 350px;
+
+    border: solid 3px #fff;
+
+    transition: all .2s ease-in-out;
 }
 
-.galeria-title{
-    background-color: #555;
-    color: white;
+.pics img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 998px) {
+    .pics img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pics {
+        padding: 0;
+    }
+
+    .pics img:hover {
+        transform: none;
+    }
     
-    padding: 5px;
-    margin-bottom: 5px;
+    .pics img {
+        transform: scale(0.9);
+        height: 300px;
+    }
 }
 
 /* Cadastra Endereço */
@@ -117,6 +144,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     
+    height: px;
 }
 
 .address-img img {

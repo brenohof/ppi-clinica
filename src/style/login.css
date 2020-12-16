@@ -52,8 +52,13 @@ body {
 }
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 550px) {
     .wrapper {
         border: none
+    }
+
+    .wrapper {
+        width: 100%;
+        border-radius: 0px;
     }
 }
