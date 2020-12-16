@@ -45,56 +45,52 @@ nav {
     color: #eee;
 }
 
-/* Conteúdo principal */
-main {
-    display: flex;
-}
-
 /* Home */
 .divImagem {
-    
-    width: 100%;
     height: 550px;
-    
+    background: url('../assets/corridaHome.jpg');
+    background-size: cover;
 }
 
-.imagemFundo {
+.divSection h2 {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.divSection p, .divSection ul {
+    font-size: 1.4rem;
+    text-align: justify;
+    padding: 20px;
+    list-style: none;
+}
+
+.divSection li {
     margin-bottom: 10px;
-    width: 100%;
-    height: 100%;
-    height: 500px;
-    border-radius: 7px;
-    box-shadow: 0 0 5px  #7abba8;
 }
 
-.divSection {
-    
-    text-align: center;
+.nomeClinica {
+    background-color: var(--cor-menta);
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
-.divSection h2{
-    background-color: #74adaa;
-    box-shadow: 0 0 10px #7abba8;
-    border-radius: 7px;
-    color: #fff;
+
+
+@media screen and (max-width: 998px) {
+    .divImagem {
+        display: none;
+    }
 }
-.nomeClinica
-{
-    box-shadow: 0 0 5px grey;
-    border-radius: 11px;
-    background-color: #74adaa;
-    position: absolute;
-    height: 90px;
-    padding: 0px 10px;
-    text-align: center;
-    top: 75%;
-    left: 65%;
-    color: #fff;
-    pointer-events: none;
+
+@media screen and (max-width: 598px) {
+    .divSection p, .divSection ul {
+        font-size: 1rem;
+    }
 }
-.nomeClinica h1{
-    margin: 0;
-}
+
 /* Galeria de imagens */
 .gallery {
     -webkit-column-count: 3;
@@ -122,15 +118,43 @@ main {
     border-radius: 7px;
     color: #fff;
     padding: 3px 4px;
-    /*color: #72AFA9;*/
     height: 50px;
     margin-bottom: 15px;
     margin-right: 5px;
 }
 
+/* Cadastra Endereço */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
-/* Rodapé da página */
-footer {
-    border-top: 2px solid var(--cor-menta);
-    height: 72px;
+.address-img img {
+    width: 512px;
+    height: 512px;
+}
+
+fieldset {
+    padding: 1rem;
+    border: 0.5 solid gray;
+    background-color: #eee;
+    width: 50%;
+}
+
+legend {
+    background-color: #555;
+    color: #fff;
+    padding: 3px 8px;
+}
+
+@media screen and (max-width: 996px) {
+    .address-img {
+        display: none;
+    }
+
+    fieldset {
+        width: 100%;
+    }
 }
