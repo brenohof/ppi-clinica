@@ -24,7 +24,6 @@ body {
 nav {
     background-color: var(--cor-menta);
 }
-
 .logo {
     transition: all .2s ease-in-out;
 }
@@ -47,6 +46,59 @@ nav {
 }
 
 /* Conteúdo principal */
+main {
+    display: flex;
+}
+
+/* Home */
+.divImagem {
+    
+    width: 1900px;
+}
+
+.imagemFundo {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 1900px;
+    height: 500px;
+}
+
+.divSection {
+    
+}
+/* Galeria de imagens */
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 2;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; 
+    position: absolute;
+    left: 25%;
+}
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; 
+}
+
+.img-fluid{
+    border-radius: 3px;
+    box-shadow: 0 0 5px grey;
+}
+
+.galeria-title{
+    background-color: #688785;
+    box-shadow: 0 0 10px #7abba8;
+    border-radius: 7px;
+    color: #fff;
+    padding: 3px 4px;
+    /*color: #72AFA9;*/
+    height: 50px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
 
 /* Rodapé da página */
 footer {
