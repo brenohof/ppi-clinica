@@ -92,35 +92,23 @@ nav {
 }
 
 /* Galeria de imagens */
-.gallery {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 2;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    column-width: 33%; 
-    position: absolute;
-    left: 25%;
-}
-.gallery .pics {
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease; 
+
+.pics {
+    padding: 0px;
+    margin:0;
 }
 
-.img-fluid{
-    border-radius: 3px;
-    box-shadow: 0 0 5px grey;
+.pics img{
+    width: 300px;
+    height: 150px;
 }
 
 .galeria-title{
-    background-color: #74adaa;
-    box-shadow: 0 0 10px #7abba8;
-    border-radius: 7px;
-    color: #fff;
-    padding: 3px 4px;
-    height: 50px;
-    margin-bottom: 15px;
-    margin-right: 5px;
+    background-color: #555;
+    color: white;
+    
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 /* Cadastra Endereço */
