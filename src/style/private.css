@@ -12,15 +12,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html {
-    position: relative;
-}
-
-html, body {
-    height: 100vh;
-}
-
 body {
+    height: 100vh;
     background-color: #eee;
 }
 
