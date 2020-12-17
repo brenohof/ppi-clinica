@@ -41,15 +41,17 @@
             </div>
         </nav>
     </header>
-    <main class="mb-5">
-        <div id="spa" class="container">
-            <?php
-            $login = true;
-            ?>
-        </div>
-    </main>
+    <div class="display">
+        <main class="mb-5">
+            <div id="spa" class="container">
+                <?php
+                $login = true;
+                ?>
+            </div>
+        </main>
 
-    <footer></footer>
+        <footer></footer>
+    </div>
     <!-- Scripts -->
     <script src="../../js/showMedico.js"></script>
     <script src="../../js/spa.js"></script>
