@@ -27,7 +27,7 @@
                                 class="fas fa-camera"></i> Galeria</a>
                         <a prop-spa="./pages/public/cadastra-endereco.html" class="link" href="#cadastro-endereco"><i
                                 class="fa fa-pencil"></i> Cadastrar Endereço</a>
-                        <a prop-spa="./pages/public/agendamento.html" class="link" href="#agendamento"><i
+                        <a agendamento="./pages/public/agendamento.html" class="link" href="#agendamento"><i
                                 class="fa fa-calendar"></i> Agendamento</a>
                         <a class="link" href="pages/login.html"><i class="fa fa-user"></i> Login</a>
                     </div>
@@ -43,13 +43,15 @@
     <footer>
     </footer>
     <!-- Scripts -->
+    <script src="js/spa.js"></script>
+    <script src="js/agendamento.js"></script>
     <script>
         window.onload = () => {
             singlePageApplication()
+            specialPage('[agendamento]')
             insertPage('./pages/public/home.html')
         }
     </script>
-    <script src="js/spa.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>

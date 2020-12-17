@@ -41,6 +41,10 @@ a {
     color: #eee;
 }
 
+#checkMedico {
+    display: none;
+}
+
 .dropdown-item:active {
     background-color: #ccc;
 }
