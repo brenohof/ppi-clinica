@@ -23,9 +23,12 @@
                 </button>
                 <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
                     <div class="navbar-nav">
-                        <a prop-spa="./pages/public/galeria.html" class="link" href="#galeria"><i class="fas fa-camera"></i> Galeria</a>
-                        <a prop-spa="./pages/public/cadastra-endereco.html" class="link" href="#cadastro-endereco"><i class="fa fa-pencil"></i> Cadastrar Endereço</a>
-                        <a prop-spa="./pages/public/agendamento.html" class="link" href="#agendamento"><i class="fa fa-calendar"></i> Agendamento</a>
+                        <a prop-spa="./pages/public/galeria.html" class="link" href="#galeria"><i
+                                class="fas fa-camera"></i> Galeria</a>
+                        <a prop-spa="./pages/public/cadastra-endereco.html" class="link" href="#cadastro-endereco"><i
+                                class="fa fa-pencil"></i> Cadastrar Endereço</a>
+                        <a prop-spa="./pages/public/agendamento.html" class="link" href="#agendamento"><i
+                                class="fa fa-calendar"></i> Agendamento</a>
                         <a class="link" href="pages/login.html"><i class="fa fa-user"></i> Login</a>
                     </div>
                 </div>
@@ -38,9 +41,13 @@
     </main>
 
     <footer>
-        
     </footer>
     <!-- Scripts -->
+    <script>
+        window.onload = () => {
+            insertPage('./pages/public/home.html')
+        }
+    </script>
     <script src="js/spa.js"></script>
 
     <!-- Font Awesome -->

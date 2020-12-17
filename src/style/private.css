@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --cor-menta: #96CFBE;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: #eee;
+}
+
+/* Cabeçalho da página */
+nav {
+    background-color: var(--cor-menta);
+}
+
+.logo {
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+
+header {
+    
+}

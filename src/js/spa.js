@@ -17,4 +17,3 @@ function insertPage(href) {
 }
 
 singlePageApplication()
-insertPage('./pages/public/home.html')
