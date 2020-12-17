@@ -47,10 +47,9 @@ nav {
 
 /* Rodapé da página */
 footer {
-    height: 150px;
+    height: 100px;
     background-color: var(--cor-menta);
 }
-
 
 /* Home */
 .divImagem {

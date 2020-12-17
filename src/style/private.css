@@ -12,6 +12,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    position: relative;
+}
+
 html, body {
     height: 100vh;
 }
@@ -25,10 +29,45 @@ nav {
     background-color: var(--cor-menta);
 }
 
-.logo {
-    transition: all .2s ease-in-out;
+li {
+    list-style: none;
 }
 
-.logo:hover {
-    transform: scale(1.2);
+a {
+    font-size: 1.5rem;
+}
+
+.link {
+    padding: 5px 10px;
+
+    text-decoration: none;
+    color: white;
+    
+}
+
+.link:hover {
+    color: #eee;
+}
+
+.dropdown-item:active {
+    background-color: #ccc;
+}
+
+/* Rodapé da página */
+footer {
+    height: 100px;
+    background-color: var(--cor-menta);
+}
+
+/* Formulários */
+fieldset {
+    padding: 1rem;
+    border: 0.5 solid gray;
+    background-color: #eee;
+}
+
+legend {
+    background-color: #555;
+    color: #fff;
+    padding: 3px 8px;
 }
