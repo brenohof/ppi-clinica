@@ -13,6 +13,9 @@
     <header>
         <nav class="p-4 navbar navbar-expand-md navbar-dark shadow">
             <div class="container">
+                <a href="../../index.html" class="navbar-brand">
+                    <img class="logo" src="../../assets/logo.svg" alt="" width="64" height="64">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,7 +26,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a prop-spa="./cadastro-paciente.html" class="dropdown-item" href="#">Paciente</a></li>
-                            <li><a form-funcionario="./cadastro-funcionario.html" id="form-funcionario" class="dropdown-item" href="#">Funcionário</a></li>
+                            <li><a prop-spa="./cadastro-funcionario.html" id="form-funcionario" class="dropdown-item" href="#">Funcionário</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -58,7 +61,6 @@
     <script>
         window.onload = function() {
             singlePageApplication()
-            specialPage('[form-funcionario]')
         }
     </script>
     <!-- Font Awesome -->
