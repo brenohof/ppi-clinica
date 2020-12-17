@@ -28,6 +28,13 @@ li {
 a {
     font-size: 1.5rem;
 }
+.logo {
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
 
 .link {
     padding: 5px 10px;
@@ -39,10 +46,6 @@ a {
 
 .link:hover {
     color: #eee;
-}
-
-#checkMedico {
-    display: none;
 }
 
 .dropdown-item:active {
