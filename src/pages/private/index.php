@@ -23,7 +23,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a prop-spa="./cadastro-paciente.html" class="dropdown-item" href="#">Paciente</a></li>
-                            <li><a prop-spa="./adastro-funcionario.html" class="dropdown-item" href="#">Funcionário</a></li>
+                            <li><a prop-spa="./cadastro-funcionario.html" id="form-funcionario" class="dropdown-item" href="#">Funcionário</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -51,7 +51,13 @@
 
     <footer></footer>
     <!-- Scripts -->
+    <script src="../../js/showMedico.js"></script>
     <script src="../../js/spa.js"></script>
+    <script>
+        window.onload = function() {
+            singlePageApplication()
+        }
+    </script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 

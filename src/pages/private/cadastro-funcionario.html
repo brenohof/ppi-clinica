@@ -1,0 +1,137 @@
+
+		<form action="../../php/cadastra-funcionario.php" method="POST" class="mt-5">
+            <fieldset>
+                <legend>Dados da Pessoa</legend>
+
+                <div class="row mb-4">
+                    <!-- Nome, Email e Telefone -->
+                    <div class="col-md-5">
+                        <label for="nome" class="form-label">Nome completo</label>
+                        <input type="text" name="nome" class="form-control" id="nome">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" name="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" name="telefone" class="form-control" id="telefone">
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do Endereço</legend>
+                    <!-- Dados Endereço -->
+                    <div class="row mb-4">
+                        <div class="col-3">
+                            <label for="cep" class="form-label" id="cep">CEP</label>
+                            <input id="cep" name="cep" type="text" class="form-control masked">
+                        </div>
+                        <div class="col-6">
+                            <label for="logradouro" class="form-label" id="logradouro">Logradouro</label>
+                            <input id="logradouro" name="logradouro" type="text" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label for="bairro" class="form-label" id="bairro">Bairro</label>
+                            <input id="bairro" name="bairro" type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-sm-6">
+                            <label for="cidade" class="form-label" id="cidade">Cidade</label>
+                            <input id="cidade" name="cidade" type="text" class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="estado" class="form-label" id="estado">Estado</label>
+                            <select name="estado" id="estado" class="form-select">
+                                <option value=" "></option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do Funcionário</legend>
+
+                <div class="row mb-4">
+                    <div class="col-4">
+                        <label for="data-ingresso" class="form-label">Data de Início</label>
+                        <input type="date" name="data-ingresso" class="form-control" id="data-ingresso">
+                    </div>
+                    <div class="col-4">
+                        <label for="senha" class="form-label">Senha:</label>
+                        <input type="password" name="senha" id="senha" class="form-control">
+                    </div>
+                     <div class="col-4">
+                        <label for="salario" class="form-label">Salario</label>
+                        <input type="number" name="salario" class="form-control" id="salario" min="0">
+                    </div>
+                </div>
+
+                <div class="row">    
+                    <div class="col px-5 form-check">
+                        <input type="checkbox" name="selectMedico" id="selectMedico" class="form-check-input">
+                        <label for="selectMedico" class="form-check-label">Funcionário Médico</label>
+                    </div>
+                </div>    
+                </fieldset>
+                    
+    <fieldset class="medico" id="checkMedico">
+        <legend>Dados Médico</legend>
+        <div class="row mb-4">        
+            <div class="col-6">
+                <label for="especialidade" class="form-label">Especialidade</label>
+                <select name="especialidade" id="especialidade" class="form-select">
+                    <option value=" "></option>
+                    <option value="cardiologista">Cardiologista</option>
+                    <option value="neurologista">Neurologista</option>
+                    <option value="dentista">Dentista</option>
+                    <option value="quiropraxista">Quiropraxista</option>
+                    <option value="oftalmologista">Oftalmologista</option>
+                    <option value="urologista">Urologista</option>
+                    <option value="ginecologista">Ginecologista</option>
+                    <option value="otorrinolaringologista">Otorrinolaringologista</option>
+                </select>    
+            </div>
+            <div class="col-6">
+                   <label for="crm" class="form-label">CRM</label>
+                   <input type="text" name="crm" id="crm" class="form-control">
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="row mb-4">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

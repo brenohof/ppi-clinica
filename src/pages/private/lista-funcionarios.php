@@ -6,7 +6,7 @@
   
     $sql = <<<SQL
     SELECT nome, email, telefone, cep, logradouro, bairro, cidade, estado,
-    data_contrato, salario, senha_hash
+    data_contrato, salario
     FROM pessoa INNER JOIN funcionario ON pessoa.codigo = funcionario.codigo
     SQL;
 
@@ -30,7 +30,6 @@
         <th>Estado</th>
         <th>Data contrato</th>
         <th>Salário</th>
-        <th>Senha hash</th>
       </tr>
     <?php
        while ($row = $stmt->fetch()) {
@@ -47,7 +46,6 @@
         $telefone = htmlspecialchars($row['telefone']);
         $dataContrato = htmlspecialchars($row['data_contrato']);
         $salario = htmlspecialchars($row['salario']);
-        $senhaHash = htmlspecialchars($row['senha_hash']);
 
         echo <<<HTML
           <tr>
@@ -60,8 +58,7 @@
             <td>$cidade</td>
             <td>$estado</td> 
             <td>$dataContrato</td> 
-            <td>$salario</td> 
-            <td>$senhaHash</td> 
+            <td>$salario</td>
           </tr>      
         HTML;
       }

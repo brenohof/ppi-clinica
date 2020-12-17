@@ -16,9 +16,9 @@ Must contain
 
 ## Private
 - [ ] Registration of staff
-- [ ] Registration of patients
-- [ ] List of employees
-- [ ] List of patients
-- [ ] List of addresses
-- [ ] List of all schedules
+- [x] Registration of patients
+- [x] List of employees
+- [x] List of patients
+- [x] List of addresses
+- [x] List of all schedules
 - [ ] List of doctor schedules

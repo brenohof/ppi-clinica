@@ -1,6 +1,6 @@
 const singlePageApplication = () => {
     document.querySelectorAll('[prop-spa]').forEach(page => {
-
+        
         const href = page.getAttribute('prop-spa');
 
         page.onclick = () => insertPage(href)
@@ -15,5 +15,3 @@ function insertPage(href) {
             main.innerHTML = html;
         })
 }
-
-singlePageApplication()
