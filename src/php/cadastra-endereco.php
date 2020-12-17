@@ -22,9 +22,15 @@ $sql = <<<SQL
   VALUES (?, ?, ?, ?, ?)
   SQL;
 
-$stmt = $pdo->prepare($sql);
-if (!$stmt->execute([
+try {
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute([
     $cep, $logradouro, $bairro, $cidade, $estado
-])) throw new Exception('Falha na inserção');
+  ]) ;
+  header('location: ../index.html');
+  exit();
+} catch (Exception $e) {
+  
+}
 
 ?>

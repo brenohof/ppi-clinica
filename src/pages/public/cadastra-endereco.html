@@ -1,13 +1,13 @@
 <div class="container wrapper mt-5">
 
     <div class="address-img">
-        <img  src="../src/assets/cadastro.svg" alt="" height="512" width="512">
+        <img  src="./assets/cadastro.svg" alt="" height="512" width="512">
     </div>
     <fieldset>
         <legend>Cadastrar Endereço</legend>
 
         <section >
-            <form action="../php/cadastra-endereco.php" method="POST">
+            <form action="./php/cadastra-endereco.php" method="POST">
                 <div class="row gy-4">
                     <div class="col-12">
                         <label for="cep" class="form-label" id="cep">CEP</label>
@@ -59,7 +59,7 @@
                         </select>
                     </div>
                 </div>
-                <button class=" btn btn-primary mt-3">Cadastrar
+                <button id="btn-cadastra-endereco" class=" btn btn-primary mt-3">Cadastrar
                 </button>
             </form>
         </section>
