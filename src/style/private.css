@@ -59,6 +59,10 @@ footer {
     background-color: var(--cor-menta);
 }
 
+.medico {
+    display: none;
+}
+
 /* Formulários */
 fieldset {
     padding: 1rem;
