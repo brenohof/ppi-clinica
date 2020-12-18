@@ -34,7 +34,6 @@
                             <li><a prop-spa="./lista-pacientes.php" class="dropdown-item" href="#">Pacientes</a></li>
                             <li><a prop-spa="./lista-funcionarios.php" class="dropdown-item" href="#">Funcionários</a></li>
                             <li><a prop-spa="./lista-enderecos.php" class="dropdown-item" href="#">Endereços</a></li>
-                            <li><a prop-spa="./lista-agendamentos.php" class="dropdown-item" href="#">Agendamentos</a></li>
                         </ul>
                     </li>
                 </div>
