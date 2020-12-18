@@ -11,8 +11,12 @@ const specialPage = (prop) => {
     const page = document.querySelector(prop)
 
     let href = page.getAttribute('form-funcionario')
-    page.onclick = () => insertPage(href, formFuncionario);
+    page.onclick = () => insertPage(href, () => {
+        formFuncionario();
+        showCep();
+    });
 }
+
 
 function insertPage(href, next) {
     const main = document.getElementById('spa');
